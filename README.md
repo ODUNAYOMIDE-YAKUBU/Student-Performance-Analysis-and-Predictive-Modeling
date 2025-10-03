@@ -102,6 +102,7 @@ Suggested approaches and metrics:
 - Model Performance: **`<RandomForestRegressor>`** 
   - Tuned Model Test MSE: `0.0579`
   - Tuned Model Test R-squared: `0.9288`
+  - `The results indicate that the RandomForest model performed exceptionally well on both the validation and test datasets. With a Mean Squared Error (MSE) of 0.063 for validation and 0.05 for test, the model's predictions are very close to the actual values, suggesting high accuracy. Furthermore, the R² score of 0.9288 for both datasets indicates that the model explains all the variability in the target variable, meaning it perfectly fits the data. Overall, these metrics suggest that the model is highly effective for this prediction task.`
   
 - Performance: **`<LogisticRegression>`**
   - Accuracy: `99.61%`
@@ -142,9 +143,6 @@ All analysis and modeling are performed within Jupyter Notebooks. Open the relev
 - (Add or modify based on your implementation)
 
 ## Results
-
-Summarize your key findings here, e.g.:
-
 -### Major takeaways
 - **Top predictors of student performance:** `StudyTimeWeekly`, `Absences`, `PastGrades` (or prior term performance), and `ParentalSupport` are the strongest predictors of final academic outcome based on feature importance analysis.
 - **Attendance matters:** Higher `Absences` is consistently associated with lower `GPA` and a higher probability of being flagged `AtRisk`.
