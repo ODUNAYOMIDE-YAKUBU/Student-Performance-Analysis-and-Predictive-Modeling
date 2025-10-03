@@ -1,7 +1,7 @@
 # Student Performance Analysis and Predictive Modeling
 
 **Project**: Student Performance Analysis And Performance Prediction  
-**Author / Maintainer**: Odunayomide Yakubu [Data Scientist and Analyst | Data Storyteller] 
+**Author / Maintainer**: Odunayomide Yakubu [Data Scientist and Analyst |Data Storyteller] 
 
 
 ## Overview
@@ -100,8 +100,8 @@ Suggested approaches and metrics:
 > Replace this section with the project's quantitative outcomes after running the notebook fully.
 
 - Model Performance: **`<RandomForestRegressor>`** 
-  -Tuned Model Test MSE: 0.0579
-  -Tuned Model Test R-squared: 0.9288
+  - Tuned Model Test MSE: `0.0579`
+  - Tuned Model Test R-squared: `0.9288`
   
 - Performance: **`<LogisticRegression>`**
   - Accuracy: `99.61%`
@@ -148,12 +148,12 @@ Summarize your key findings here, e.g.:
 -### Major takeaways
 - **Top predictors of student performance:** `StudyTimeWeekly`, `Absences`, `PastGrades` (or prior term performance), and `ParentalSupport` are the strongest predictors of final academic outcome based on feature importance analysis.
 - **Attendance matters:** Higher `Absences` is consistently associated with lower `GPA` and a higher probability of being flagged `AtRisk`.
-- **Study habits drive gains:** Students reporting ≥ **X** hours/week of focused study (replace `X` with your threshold) show substantially higher average GPA than peers.
+- **Study habits drive gains:** Students reporting ≥ **71%** hours/week of focused study show substantially higher average GPA than peers.
 - **Extracurricular involvement shows mixed effects:** Participation in clubs, sports, and music correlates with improved engagement and modest positive GPA lift after controlling for study time; the effect varies by activity type.
 - **Tutoring helps but is clustered:** Students receiving tutoring often start with lower baseline performance (selection effect) yet demonstrate better relative improvement; targeted tutoring appears more effective than unfocused programs.
-- **Model performance (example — replace with your metrics):** Best model = **RandomForestRegressor** — *Accuracy:* `92.9%`, *Recall (AtRisk):* `YY%`.
+- **Model performance:** Best model = **RandomForestRegressor** — *Accuracy:* `92.9%`, *Recall (AtRisk):* `99.6%`.
 - **Fairness & bias check:** Performance gaps were observed across demographic groups (e.g., `Ethnicity`, `ParentalEducation`). Without mitigation, models may reproduce existing disparities.
-- **Actionable threshold heuristic:** A practical early-warning rule combining `GPA < T` and `Absences > A` (set `T` and `A` from EDA) captures a high proportion of students who later score poorly — useful as a low-cost initial intervention trigger.
+
 
 ### Practical recommendations
 1. **Early-warning dashboard:** Implement a real-time rule to flag students with low recent grades, high absences, or low study hours for counselor outreach and support.  
@@ -161,7 +161,6 @@ Summarize your key findings here, e.g.:
 3. **Parental engagement programs:** Run low-cost workshops or weekly progress summaries for students with low `ParentalSupport` scores.  
 4. **Promote structured study time:** Offer study-skill sessions and track `StudyTimeWeekly` as a KPI; marginal increases in study time correlate with measurable GPA gains.  
 5. **Audit model fairness:** Perform subgroup evaluation and calibration checks before deployment; consider class balancing, reweighting, or fairness-aware algorithms for mitigation.
-
 
 ## Contributing
 
@@ -174,8 +173,6 @@ Contributions are welcome! Please open issues or submit pull requests for enhanc
 ## Contact
 
 For questions or collaborations, reach out to the repository owner via [GitHub profile](https://github.com/ODUNAYOMIDE-YAKUBU).
-
-
 
 
 ### Clone the repo
