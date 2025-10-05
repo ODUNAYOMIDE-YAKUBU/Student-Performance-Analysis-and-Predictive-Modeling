@@ -97,7 +97,6 @@ Suggested approaches and metrics:
 - Outputs: plots, summary tables, and saved model artifacts (if run).
 
 ## Results (summary)
-> Replace this section with the project's quantitative outcomes after running the notebook fully.
 
 - Model Performance: **`<RandomForestRegressor>`** 
   - Tuned Model Test MSE: `0.0579`
@@ -131,19 +130,17 @@ All analysis and modeling are performed within Jupyter Notebooks. Open the relev
 │   ├── EDA.ipynb                      # Exploratory Data Analysis
 │   ├── Preprocessing.ipynb            # Data preprocessing steps
 │   └── Modeling.ipynb                 # Predictive modeling
-├── requirements.txt
 ├── README.md
 ```
 
 ## Machine Learning Models
 
 - Logistic Regression
-- Decision Trees
 - Random Forests
-- (Add or modify based on your implementation)
+
 
 ## Results
--### Major takeaways
+- Major takeaways
 - **Top predictors of student performance:** `StudyTimeWeekly`, `Absences`, `PastGrades` (or prior term performance), and `ParentalSupport` are the strongest predictors of final academic outcome based on feature importance analysis.
 - **Attendance matters:** Higher `Absences` is consistently associated with lower `GPA` and a higher probability of being flagged `AtRisk`.
 - **Study habits drive gains:** Students reporting ≥ **71%** hours/week of focused study show substantially higher average GPA than peers.
